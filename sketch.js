@@ -29,7 +29,6 @@ function setup() {
 }
 
 function draw() {
-	console.log(paper.body.position)
 	background(0);
 
 
