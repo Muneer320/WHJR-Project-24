@@ -32,7 +32,6 @@ function draw() {
 	console.log(paper.body.position)
 	background(0);
 
-	keyPressed();
 
 	rectMode(CENTER);
 
@@ -52,6 +51,6 @@ function draw() {
 
 function keyPressed(){
     if (keyCode === UP_ARROW){
-      Body.applyForce(paper.body, paper.body.position,{x:15,y:-15});
+      Matter.Body.applyForce(paper.body, paper.body.position,{x:15,y:-15});
     }
   }
